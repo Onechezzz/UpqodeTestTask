@@ -1,0 +1,135 @@
+.map-nav {
+  max-width: 324px;
+
+  width: 100vw;
+  max-height: 128px;
+  height:100vh;
+}
+.btn{
+  max-width: 270px;
+  width: 100vw;
+
+}
+.btn img{
+
+  margin-right: 21px;
+  /*margin-top: 25px;*/
+  filter: grayscale(100%);
+
+}
+.btn p{
+  margin-left: 43px;
+}
+.active-btn{
+    background-color: #FFFFFF;
+
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.0758039);
+  }
+  .active-btn img{
+    filter: grayscale(0%);
+  }
+.map-nav h2{
+  font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 52px;
+line-height: 60px;
+color: #00A031;
+}
+.map-nav p{
+  font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: #6C6C6C;
+
+}
+.map-nav h4{
+  margin-top:18px;
+    color: #00A031;
+}
+
+.customInfoWindow {
+
+  background-color: #fff;
+  padding: 27px;
+  padding-left: 58px;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px 0 rgba(50,50,50,0.5);
+  width: 321px;
+
+  height: 496px;
+  z-index: 5;
+}
+
+.customInfoWindow h3{
+  color: #1C201E;
+  font-weight:bold;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 51px;
+  letter-spacing: 0.4px;
+}
+.customInfoWindow p{
+  font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: #6C6C6C;
+
+}
+
+.customInfoWindow img{
+margin-right: 14px;
+
+}
+.customInfoWindow b{
+  font-family: Poppins;
+font-style: normal;
+font-weight:bold;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: #222222;
+
+}
+.customInfoWindow h5{
+  margin-top:31px;
+  font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.2px;
+color: #1C201E;
+}
+
+/*.customInfoWindow:after {
+  position: absolute;
+  right: -5px;
+  top: 45px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent #000;
+}
+
+.customInfoWindow .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 10px;
+  height: 10px;
+  float: right;
+
+  background: url(close-google-popup.png) center center no-repeat;
+  opacity: 0;
+}*/
