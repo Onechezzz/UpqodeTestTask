@@ -10,6 +10,7 @@
   <link href="css/map.css" rel="stylesheet">
   <link href="/fonts/Gilroy-font.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <!--<link rel="stylesheet/less" href="styles.less">-->
 </head>
 <body>
 <div class="container">
@@ -65,19 +66,19 @@
       <button class="slider-button" id="slider-right"><img id="arrow-left" src="images/Arrow-left.png"/></button>
       <button class="slider-button" id="slider-left"><img id="arrow-right" src="images/Arrow-right.png"/></button>
       </div>
-      <div class="slider-dots">
-          <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+      <div class="slider-dots" id="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)" id="first-dot" ></span>
           <span id="slider-dots_item2" class="slider-dots_item" onclick="currentSlide(2)"></span>
           <span class="slider-dots_item" onclick="currentSlide(3)"></span>
       </div>
+      <div class="carousel-text" id="carousel-text">
+        <h1 class="carousel-text">Mileage Made Simple</h1>
+        <p class="carousel-text">Motivation And Your Personal Vision An Unbeatable Force</p>
+        <button class="carousel-text">Start free trial</button>
 
+      </div>
     </div>
-    <div id="carousel-text">
-      <h1>Mileage Made Simple</h1>
-      <p>Motivation And Your Personal Vision An Unbeatable Force</p>
-      <button>Start free trial</button>
 
-    </div>
   </div>
   <div id="map-container">
     <div class= "map-nav" id='map-nav' >
@@ -110,6 +111,7 @@
   </div>
   <div id='map'>
   map
+
   </div>
   <div id="map-info" >
     <div class="customInfoWindow"><h3>New York</h3><p>2005 Stokes Isle Apt. 896,<br/>New York 10010</p><h5><img src="images/clock.png"></img>Work Schedule</h5><p><b>Mon - Sat</b>: 11:00-19:00, <b>Sun</b>: 11:00-16:00,</p><h5><img src="images/phone.png"></img>Head Office</h5><p>(0043) 568 456 902<br/>(0043) 568 456 902</p>
@@ -125,10 +127,14 @@
     <span id="footer-span">© UpQode 2019.  All Right Reserved.</span>
   </footer>
 </div>
-</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min.js"></script>
 <script src="map.js" type="text/javascript"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQOTlu_yXtqngQ91zsiDK8Qrw76wvqLHI&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4lLTpesqoq5YAmUCrwce42fiRqgeOG3o&callback=initMap"></script>
+
 <script src="carousel.js" type="text/javascript"></script>
+
 <script src="player.js" type="text/javascript"></script>
 <script src="/index.js"></script>
+</body>
+
 </html>

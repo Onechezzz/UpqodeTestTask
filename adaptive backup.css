@@ -1,0 +1,124 @@
+header {
+  background-color: red;
+  width:100%;
+  flex-direction: column;
+  height:auto;
+  /*margin-left: 512px;*/
+
+  left: 0%;
+
+  position:fixed;
+
+}
+#logo{
+  margin-top:12px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /*justify-content: space-between;*/
+  margin-left: 0px;
+
+  /*margin-top: 32px;*/
+  /*margin-bottom: :32px;*/
+  /*margin-right: 13.49px;*/
+}
+#nav-buttons{
+  flex-direction: column;
+  background: black;
+  width:100%;
+  margin-left:0px;
+}
+#carousel-main{
+  grid-area:carousel-main;
+
+  background-color: yellow;
+  height: 100vh;
+  max-height: 1062px;
+  max-width: 1920px;
+  width: 100%;
+  background-image: url(images/image.jpg);
+  background-size: cover;
+}
+#slider{
+  /*Непонятно работает ли*/
+  width: 100%;
+  max-height:1062px;
+  height: 100vh;
+  /*border:5px solid black;*/
+  /*margin-left:323px;
+  margin-top: 71px;*/
+  overflow: hidden; /*Элементы не вылазят над бордер*/
+  z-index: 100;
+}
+/*.video{
+
+  max-width: 1920px;
+  max-height:1062px;
+  height: 100vh;
+  width:100%;
+}*/
+#buttons{
+  position: absolute;
+
+  display: flex;
+  justify-content: space-between;
+  /*margin-top: 51px;*/
+  width: 1024px;
+  left:0%;
+  margin-top: -316px;
+  /*margin-left: 176.5px;*/
+  z-index: 3;
+
+}
+.carousel-text{
+  position:absolute;
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: column;
+
+
+  max-height: 265px;
+  transform: translateX(50%);
+  height: 100vh;
+  width: 100%;
+  margin-left: 50%;
+  margin-top: -608px;
+  /*margin-left: 500px;*/
+  z-index: 3;
+}
+.carousel-text h1{
+  display: flex;
+  justify-content:center;
+  font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 90px;
+line-height: 100px;
+}
+.carousel-text p {
+  display: flex;
+  justify-content:center;
+  margin-top: 25px;
+  font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 32px;
+color: #FFFFFF;
+
+}
+.carousel-text button{
+
+  margin-top: 54px;
+  width: 172px;
+  height:54px;
+  background: #00A031;
+  border-radius: 27px;
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  color: #F4FBF6;
+  margin-left: 450px;
+}

@@ -29,7 +29,7 @@ var player3;
 function onYouTubePlayerAPIReady() {
             player1 = new YT.Player('player1', {
               videoId: 'oMFxQsaT274',
-              playerVars: { 'autoplay': 1, 'controls': 0 }
+              playerVars: { 'autoplay': 1, 'controls': 0 }//Поменять автоплей
              });
              player2 = new YT.Player('player2', {
                videoId: 'YE7VzlLtp-4'

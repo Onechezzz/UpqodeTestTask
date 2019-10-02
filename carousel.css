@@ -1,16 +1,7 @@
-#slider{
-  width: 1920px;
-  max-height:1062px;
-  height: 100vh;
-  /*border:5px solid black;*/
-  /*margin-left:323px;
-  margin-top: 71px;*/
-  overflow: hidden; /*Элементы не вылазят над бордер*/
-  z-index: 2;
-}
+
 
 #slider iframe {
-  width: 1920px;
+  width: 100%;
   max-width: 1920px;
   max-height:1062px;
   height: 100vh;
@@ -20,13 +11,14 @@
 #strip iframe:last-child{
   margin-right: 0px;
 }
-iframe .video{
-  max-width: 1920px;
+.video{
+  width:100%;
   max-height:1062px;
   height: 100vh;
 }
 
 #strip{
+  background: #BEBFB7;
   width: 5775px;
   max-height:1062px;
   height: 100vh;
@@ -42,18 +34,7 @@ iframe .video{
   clear: both;
   z-index: 2;
 }
-#buttons{
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  /*margin-top: 51px;*/
-  width: 1567px;
 
-  margin-top: -516px;
-  margin-left: 176.5px;
-  z-index: 3;
-
-}
 #buttons button{
   padding: 0;
   border: none;
@@ -73,15 +54,34 @@ button::hover{
 
 }
 #slider-right{
-  margin-right: 66px;
+  margin-left: 10.05%;
 }
-
+#slider-left{
+  margin-left: 89.17%;
+  /* margin-right: 9.58%;
+  right:9.58%; */
+}
+#slider-dots{
+  background: red;
+  border: 5px solid blue;
+}
 .slider-dots {
-  position: absolute;
+  position: relative;
   display: flex;
-    margin-top: -113.29px;
-    margin-left: 897px;
+  justify-content: center;
+  width:100%;
+  /* left: 50%;
+  transform: translateX(-50%); */
+
+    /* left: 48.18%; */
+    /* right: 48.18%; */
+    top: 82.65%;
+    bottom:17.12%;
+    margin-top: -113px;
     z-index: 3;
+}
+#first-dot{
+
 }
 .slider-dots_item{
 

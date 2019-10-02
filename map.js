@@ -999,9 +999,3 @@ this.setMap(this.map_);
 };
 
 }
-
-
-
-
-
-     ////////////////////////////Custom InfoWindow
