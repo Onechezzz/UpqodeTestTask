@@ -1,14 +1,4 @@
-
-
-#slider iframe {
-  width: 100%;
-  max-width: 1920px;
-  max-height:1062px;
-  height: 100vh;
-/*  margin-right: 43px;*/
-  float:left;
-}
-#strip iframe:last-child{
+/* #strip iframe:last-child{
   margin-right: 0px;
 }
 .video{
@@ -19,7 +9,7 @@
 
 #strip{
   background: #BEBFB7;
-  width: 5775px;
+  width: 300%;
   max-height:1062px;
   height: 100vh;
   position:relative;
@@ -36,6 +26,7 @@
 }
 
 #buttons button{
+
   padding: 0;
   border: none;
   font: inherit;
@@ -57,13 +48,13 @@ button::hover{
   margin-left: 10.05%;
 }
 #slider-left{
-  margin-left: 89.17%;
+  margin-right: 9.58%;
+  /* margin-left: 89.17%; */
   /* margin-right: 9.58%;
   right:9.58%; */
 }
 #slider-dots{
-  background: red;
-  border: 5px solid blue;
+
 }
 .slider-dots {
   position: relative;

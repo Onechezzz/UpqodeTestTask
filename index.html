@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <link href="/carousel.css" rel="stylesheet">
+  <!--<link href="/carousel.css" rel="stylesheet">-->
   <link href="css/map.css" rel="stylesheet">
   <link href="/fonts/Gilroy-font.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -31,46 +31,40 @@
                     <li class="nav-buttons-list"><a href="#map-nav">Contact Us</a></li>
 
                 </ul>
-
+            </nav>
+            <div id="adapt">
+                <div class="menu-title"></div>
+                <div class="menu-body">
+                  <ul>
+                    <li class="adapt-buttons"><a href="#carousel-main">Home</a></li>
+                    <li class="adapt-buttons"><a href="#">Services</a></li>
+                    <li class="adapt-buttons"><a href="#">Team</a></li>
+                    <li class="adapt-buttons"><a href="#map-nav">Contact Us</a></li>
+                  </ul>
+                </div>
+                </div>
   </header>
   <div id="carousel-main">
     <div id="carousel" class="carousel">
 
       <!-- Swiper -->
       <div id="slider">
-        <div id="strip" class="mySlides">
+      <div id="strip" class="mySlides">
+        <div class="video" id="player1"   allow="autoplay"></div>
+          <div class="video" id="player2"   allow="autoplay"></div>
+           <div class="video" id="player3"   allow="autoplay"></div>
 
-         <div class="video" id="player1"   allow="autoplay"></div>
-           <div class="video" id="player2"   allow="autoplay"></div>
-            <div class="video" id="player3"   allow="autoplay"></div>
-
-            <!--<img src="images/1.jpg" alt="slide 1" id="switch1">
-
-            id="player"
-            <img src="images/2.jpg" alt="slide 1" id="switch1">
-
-
-            <img src="images/1.jpg" alt="slide 1" id="switch1">
-
-
-            <img src="images/2.jpg" alt="slide 1" id="switch1">
-
-
-            <img src="images/5.jpg" alt="slide 1" id="switch1">
-        -->
-
-
-        </div>
       </div>
-      <div id="buttons">
+    </div>
+    <div id="buttons">
       <button class="slider-button" id="slider-right"><img id="arrow-left" src="images/Arrow-left.png"/></button>
       <button class="slider-button" id="slider-left"><img id="arrow-right" src="images/Arrow-right.png"/></button>
-      </div>
-      <div class="slider-dots" id="slider-dots">
-          <span class="slider-dots_item" onclick="currentSlide(1)" id="first-dot" ></span>
-          <span id="slider-dots_item2" class="slider-dots_item" onclick="currentSlide(2)"></span>
-          <span class="slider-dots_item" onclick="currentSlide(3)"></span>
-      </div>
+    </div>
+    <div class="slider-dots" id="slider-dots">
+      <span class="slider-dots_item" onclick="currentSlide(1)" id="first-dot"></span>
+      <span class="slider-dots_item" onclick="currentSlide(2)"id="slider-dots_item2"></span>
+      <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+    </div>
       <div class="carousel-text" id="carousel-text">
         <h1 class="carousel-text">Mileage Made Simple</h1>
         <p class="carousel-text">Motivation And Your Personal Vision An Unbeatable Force</p>
@@ -83,7 +77,7 @@
   <div id="map-container">
     <div class= "map-nav" id='map-nav' >
     <div id='map-nav-div'>
-      <h2 >Meet Us<br/>in Your City</h2>
+      <h1 id="meet">Meet Us<br/>in Your City</h1>
       <p>2005 Stokes Isle Apt. 896,<br/>
       Venaville, New York 10010</p>
     </div>
@@ -129,10 +123,12 @@
 </div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min.js"></script>
 <script src="map.js" type="text/javascript"></script>
+
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4lLTpesqoq5YAmUCrwce42fiRqgeOG3o&callback=initMap"></script>
 
 <script src="carousel.js" type="text/javascript"></script>
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="/burger.js"></script>
 <script src="player.js" type="text/javascript"></script>
 <script src="/index.js"></script>
 </body>

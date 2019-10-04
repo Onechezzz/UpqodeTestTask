@@ -48,8 +48,8 @@ function startNewVideo() {
 
 function sliderleft(){
 
-  left = left - 1925;
-  if (left < -3850 ){
+  left = left - 100;
+  if (left < -200 ){
     left = 0;
 
   }
@@ -62,14 +62,14 @@ function sliderleft(){
   }else {
     document.getElementById('slider-right').style.opacity = "1";
   }
-  if(left == -1925){
+  if(left == -100){
     player2.playVideo();
     player1.pauseVideo();
     player3.pauseVideo();
   }else {
 
   }
-  if(left == -3850){
+  if(left == -200){
     player3.playVideo();
     player2.pauseVideo();
     player1.pauseVideo();
@@ -77,18 +77,18 @@ function sliderleft(){
   }else {
     document.getElementById('slider-left').style.opacity = "1";
   }
-strip.style.left = left + 'px';
+strip.style.left = left + '%';
 }
 
 
 
 function sliderright(){
 
-  left = left + 1925;
+  left = left + 100;
   if (left > 0 ){
-    left = -3850;
+    left = -200;
   }
-  if(left == -3850){
+  if(left == -200){
     player3.playVideo();
     player2.pauseVideo();
     player1.pauseVideo();
@@ -96,7 +96,7 @@ function sliderright(){
   }else {
     document.getElementById('slider-left').style.opacity = "1";
   }
-  if(left == -1925){
+  if(left == -100){
     player2.playVideo();
     player1.pauseVideo();
     player3.pauseVideo();
@@ -111,7 +111,7 @@ function sliderright(){
   }else {
     document.getElementById('slider-right').style.opacity = "1";
   }
-  strip.style.left = left + 'px';
+  strip.style.left = left + '%';
 
 }
 /////////////////////////////////////////////////
@@ -132,7 +132,7 @@ function currentSlide(n){
     player3.pauseVideo();
   }
   if(n == 2){
-    left = -1925;
+    left = -100;
     document.getElementsByClassName('slider-dots_item')[n-2].classList.remove("active");
     document.getElementsByClassName('slider-dots_item')[n].classList.remove("active");
     document.getElementsByClassName('slider-dots_item')[n-1].classList.add("active");
@@ -141,7 +141,7 @@ function currentSlide(n){
     player3.pauseVideo();
   }
   if(n == 3){
-    left = -3850;
+    left = -200;
     document.getElementsByClassName('slider-dots_item')[n-3].classList.remove("active");
     document.getElementsByClassName('slider-dots_item')[n-2].classList.remove("active");
     document.getElementsByClassName('slider-dots_item')[n-1].classList.add("active");
@@ -149,7 +149,7 @@ function currentSlide(n){
     player2.pauseVideo();
     player1.pauseVideo();
   }
-  strip.style.left = left + 'px';
+  strip.style.left = left + '%';
 }
 
 function showSlides(n){
@@ -163,11 +163,11 @@ function showSlides(n){
 
   }
   if(n == 2){
-    left = -1925;
+    left = -100;
 
   }
   if(n == 3){
-    left = -3850;
+    left = -200;
 
   }
   for(let i=0;i<slides.length; i++){
