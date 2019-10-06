@@ -1,9 +1,4 @@
 // Определяем переменную map
-window.onload = function() {
-
-  initMap();
-
-}
 
 
 var map;
@@ -124,6 +119,7 @@ function initMap() {
     addMarker(markers[i]);
   }
 }
+  initMap();
   INFWOverlay.prototype = new google.maps.OverlayView();
 
 /**
@@ -153,8 +149,6 @@ var div = document.createElement('div');
 div.style.border = 'none';
 div.style.borderWidth = '0px';
 div.style.position = 'absolute';
-здесь я задал нужный мне класс, для которого буду
-затем создавать каскадные стили
 div.classList.add('customInfoWindow');
 // добавим HTML контент
 div.innerHTML = CIW.content_;
@@ -204,7 +198,7 @@ INFWOverlay.prototype.onRemove = function() {
 this.div_.parentNode.removeChild(this.div_);
 };
 
-Set the visibility to 'hidden' or 'visible'.
+//Set the visibility to 'hidden' or 'visible'.
 INFWOverlay.prototype.hide = function() {
 if (this.div_) {
  // The visibility property must be a string enclosed in quotes.

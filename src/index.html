@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <!--<link rel="stylesheet" href="../css/style.css">-->
   <!--<link href="/carousel.css" rel="stylesheet">-->
 
-  <link href="../css/map.css" rel="stylesheet">
+  <!-- <link href="../css/map.css" rel="stylesheet"> -->
+  <link href="/css/style.css" rel="stylesheet">
   <link href="../fonts/Gilroy-font.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <!--<link rel="stylesheet/less" href="styles.less">-->
@@ -22,9 +23,9 @@
       <!-- Swiper -->
       <div id="slider">
       <div id="strip" class="mySlides">
-        <div class="video" id="player1"   allow="autoplay"></div>
-          <div class="video" id="player2"   allow="autoplay"></div>
-           <div class="video" id="player3"   allow="autoplay"></div>
+        <div class="video" id="player1"  class="switch1" allow="autoplay"></div>
+          <div class="video" id="player2" class="switch1"  allow="autoplay"></div>
+           <div class="video" id="player3"  class="switch1" allow="autoplay"></div>
 
       </div>
     </div>
@@ -33,9 +34,9 @@
       <button class="slider-button" id="slider-left"><img id="arrow-right" src="../images/Arrow-right.png"/></button>
     </div>
     <div class="slider-dots" id="slider-dots">
-      <span class="slider-dots_item" onclick="currentSlide(1)" id="first-dot"></span>
-      <span class="slider-dots_item" onclick="currentSlide(2)"id="slider-dots_item2"></span>
-      <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+      <span class="slider-dots_item"  id="first-dot"></span>
+      <span class="slider-dots_item" id="slider-dots_item2"></span>
+      <span class="slider-dots_item"></span>
     </div>
       <div class="carousel-text" id="carousel-text">
         <h1 class="carousel-text">Mileage Made Simple</h1>
@@ -86,16 +87,18 @@
 </div>
 //= templates/footer.html
 </div>
+<script src="/js/script.js" type="text/javascript"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min.js"></script>
-<script src="../js/map.js" type="text/javascript"></script>
+<!-- <script src="../js/map.js" type="text/javascript"></script> -->
+
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4lLTpesqoq5YAmUCrwce42fiRqgeOG3o&callback=initMap"></script>
 
-<script src="../js/carousel.js" type="text/javascript"></script>
+<!-- <script src="../js/carousel.js" type="text/javascript"></script> -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="../js/burger.js"></script>
-<script src="../js/player.js" type="text/javascript"></script>
-<script src="../js/index.js"></script>
+<!-- <script src="../js/burger.js"></script> -->
+<!-- <script src="../js/player.js" type="text/javascript"></script> -->
+<!-- <script src="../js/index.js"></script> -->
 </body>
 
 </html>
